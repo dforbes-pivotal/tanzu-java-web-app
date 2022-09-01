@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "<html><body><h1>Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>";
+		return "<html><body><h1 style="color:red;">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>";
 	}
 
 }
