@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("<html><body><h1 style="color:red;">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>", controller.index());
+        assertEquals("<html><body><h1 style=\"color:red;\">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("<html><body><h1 style="color:red;">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>"));
+            .andExpect(content().string("<html><body><h1 style=\"color:red;\">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>"));
     }
 }
