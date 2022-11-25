@@ -11,6 +11,8 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: gitops_ssh_secret
+    value: dforbes-pivotal-https
   source:
     git:
       url: https://github.com/dforbes-pivotal/tanzu-java-web-app

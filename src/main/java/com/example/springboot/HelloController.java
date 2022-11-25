@@ -11,4 +11,12 @@ public class HelloController {
 		return "<html><body><h1 style=\"color:red;\">Greetings from Tanzu Application Platform</h1><p>based on Spring</p></body></html>";
 	}
 
+	@RequestMapping("live-update")
+	public String update() {
+		return "<html><body>" + 
+		          "<h1 style=\"color:red;\">Greetings from Tanzu Application Platform</h1>" + 
+				  "<br><br>" +
+				  "<p>text from live update example</p>" +
+				  "</body></html>";
+	}
 }
