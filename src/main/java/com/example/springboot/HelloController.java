@@ -14,7 +14,7 @@ public class HelloController {
 	@RequestMapping("live-update")
 	public String update() {
 		return "<html><body>" + 
-		          "<h1 style=\"color:red;\">Greetings from Tanzu Application Platform</h1>" + 
+		          "<h1 style=\"color:blue;\">Greetings from Tanzu Application Platform</h1>" + 
 				  "<br><br>" +
 				  "<p>text from live update example</p>" +
 				  "</body></html>";
